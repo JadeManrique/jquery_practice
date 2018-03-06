@@ -11,3 +11,7 @@ p {
 h1 {
   text-align: center;
 }
+
+#box {
+  background-color: blue;
+}

@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+  $( "a" ).click(function( event ) {
+
+    event.preventDefault();
+
+    $( this ).hide( "slow" );
+
+    });
+
 
 
   $("#text").click( function () {
@@ -18,6 +26,13 @@ $(document).ready(function() {
 
   });
 
+// random test material
+
+$( "#target" ).keypress(function() {
+
+  $( this ).hide( "slow ");
+
+});
 
 
 });
