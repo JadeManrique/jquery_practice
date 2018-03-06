@@ -1,14 +1,8 @@
 $(document).ready(function() {
 
-  $( "a" ).click(function( event ) {
 
-    event.preventDefault();
-
-    $( this ).hide( "slow" );
-
-    });
-
-
+  var box = $("#box");
+  var testBox = $("#testBox");
 
   $("#text").click( function () {
 
@@ -28,11 +22,42 @@ $(document).ready(function() {
 
 // random test material
 
-$( "#target" ).keypress(function() {
+  $( "#target" ).keypress(function() {
 
-  $( this ).hide( "slow ");
+    $( this ).hide( "slow ");
+
+  });
+
+  $( "a" ).click(function( event ) {
+
+    event.preventDefault();
+
+    $( this ).hide( "slow" );
+
+    });
+
+  $("#colorChange").click(function() {
+
+    box.show( "slow" );
+
+  });
+
+  $("#testBox").scroll(function() {
+
+    testBox.css("color", "red");
+
+  });
+
+
+
 
 });
 
+function randomNumber() {
 
-});
+  var number = Math.random() * 255;
+  number = Math.floor(number);
+
+  return number;
+
+}

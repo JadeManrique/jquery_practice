@@ -14,4 +14,12 @@ h1 {
 
 #box {
   background-color: blue;
+  height: 150px;
+  width: 230px;
+}
+
+#testBox {
+  background-color: gold;
+  height: 150px;
+  width: 250px;
 }
