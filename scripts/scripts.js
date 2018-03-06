@@ -2,7 +2,9 @@ $(document).ready(function() {
 
 
   var box = $("#box");
-  var testBox = $("#testBox");
+  var colorString = "rgb(";
+
+  console.log(colorString);
 
   $("#text").click( function () {
 
@@ -38,7 +40,12 @@ $(document).ready(function() {
 
   $("#colorChange").click(function() {
 
-    box.show( "slow" );
+    colorString = "rgb(";
+
+    colorString = colorString + randomNumber() + ", " + randomNumber() + ", " + randomNumber() + ")";
+
+    $("#box").css("background-color", colorString);
+
 
   });
 
