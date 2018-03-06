@@ -2,25 +2,20 @@ $(document).ready(function() {
 
 
   var box = $("#box");
+  var testBox = $("#testBox");
   var colorString = "rgb(";
-
-  console.log(colorString);
 
   $("#text").click( function () {
 
-    var currentColor = $("#header").css("color");
+    colorString = "rgb(";
 
-    if (currentColor == "rgb(0, 0, 0)") {
+    colorString = colorString + randomNumber() + ", " + randomNumber() + ", " + randomNumber() + ")";
 
-      $("#header").css("color", "gold");
-
-    } else {
-
-      $("#header").css("color", "rgb(0, 0, 0)");
-
-    }
+    $("h1").css("color", colorString);
 
   });
+
+
 
 // random test material
 
@@ -51,7 +46,8 @@ $(document).ready(function() {
 
   $("#testBox").scroll(function() {
 
-    testBox.css("color", "red");
+    $( "div" ).clone().appendTo( document.body );
+    testBox.css("color", "red").fadeOut("slow");
 
   });
 
