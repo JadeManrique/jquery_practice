@@ -19,6 +19,26 @@ $(document).ready(function() {
 
 // random test material
 
+  var loopingColor = setInterval(function () {
+
+    colorString = "rgb(";
+
+    colorString = colorString + randomNumber() + ", " + randomNumber() + ", " + randomNumber() + ")";
+
+      $("#box").css("background-color", colorString);
+
+  }, 25);
+
+  var loopingColor = setInterval(function () {
+
+    colorString = "rgb(";
+
+    colorString = colorString + randomNumber() + ", " + randomNumber() + ", " + randomNumber() + ")";
+
+      $("#body").css("background-color", colorString);
+
+  }, 25);
+
   $( "#target" ).keypress(function() {
 
     $( this ).hide( "slow ");
@@ -34,6 +54,8 @@ $(document).ready(function() {
     });
 
   $("#colorChange").click(function() {
+
+    clearInterval(loopingColor);
 
     colorString = "rgb(";
 
