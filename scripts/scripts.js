@@ -25,8 +25,6 @@ $(document).ready(function() {
 
     colorString = colorString + randomNumber() + ", " + randomNumber() + ", " + randomNumber() + ")";
 
-      $("#box").css("background-color", colorString);
-
   }, 25);
 
   var loopingColor = setInterval(function () {
