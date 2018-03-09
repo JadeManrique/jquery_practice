@@ -11,11 +11,11 @@ $(document).ready(function () {
       if (passwordLog == "12345678") {
         console.log("Correct");
       } else {
-        console.log("Error");
+        $("#error").css("display", "block", "visibility", "visible")
       }
 
     } else {
-        console.log("No user with email " + emailLog + " exists.");
+        $("#error").css("display", "block", "visibility", "visible")
       }
 
     });

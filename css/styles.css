@@ -37,3 +37,12 @@ form {
 ::placeholder {
   text-align: center;
 }
+
+#error {
+  height: auto;
+  width: auto;
+  visibility: hidden;
+  color: white;
+  text-align: center;
+  display: none;
+}
