@@ -17,6 +17,7 @@ $(document).ready(function () {
     } else {
         console.log("No user with email " + emailLog + " exists.");
       }
+
     });
 
   });
