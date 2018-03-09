@@ -25,3 +25,10 @@ h1 {
 }
 
 #body
+
+.loginPrompt {
+
+  padding-top: 55px;
+  text-align:center;
+
+}
