@@ -43,6 +43,11 @@ form {
   width: auto;
   visibility: hidden;
   color: white;
+  display:none;
+  margin: 5px;
+  font-style: italic;
+  font-family: 'helvetica', sans-serif;
+  font-size: 10px;
   text-align: center;
-  display: none;
+  padding-top: 5px;
 }

@@ -11,11 +11,11 @@ $(document).ready(function () {
       if (passwordLog == "12345678") {
         console.log("Correct");
       } else {
-        $("#error").css("display", "block", "visibility", "visible")
+        $("#error").css({"visibility": "visible", "display": "block"})
       }
 
     } else {
-        $("#error").css("display", "block", "visibility", "visible")
+        $("#error").css({"visibility": "visible", "display": "block"})
       }
 
     });
