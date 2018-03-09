@@ -24,11 +24,24 @@ h1 {
   width: 250px;
 }
 
-#body
+#body {
+
+}
 
 .loginPrompt {
-
   padding-top: 55px;
   text-align:center;
+}
 
+button {
+  width:50px;
+  height:20px;
+}
+
+input {
+
+}
+
+form {
+  
 }
