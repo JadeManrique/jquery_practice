@@ -2,28 +2,6 @@
   background-color: black;
 }
 
-p {
-  text-align: center;
-  color: white;
-  margin: 15px, 25px, 15px, 25px;
-}
-
-h1 {
-  text-align: center;
-}
-
-#box {
-  background-color: blue;
-  height: 150px;
-  width: 230px;
-}
-
-#testBox {
-  background-color: gold;
-  height: 150px;
-  width: 250px;
-}
-
 .loginPrompt {
   margin: 10px;
   width: 200px;
