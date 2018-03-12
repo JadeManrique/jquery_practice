@@ -4,13 +4,13 @@ $(document).ready(function () {
 
   $("#biography dt").click(function (e) {
 
-    var isItHidden = false;
+    $("#biography dd").css("display", "none");
 
-    if ( $("#biography dd").css("display") == "none" ) {
+    if ( $(this).next().css("display") == "none" ) {
 
-    $("#biography dd").css("display", "block"); } else {
+    $(this).next().css("display", "inline-block"); } else {
 
-      $("#biography dd").css("display", "none");
+      $(this).next().css("display", "none");
 
     }
 
