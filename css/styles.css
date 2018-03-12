@@ -1,53 +1,23 @@
-#body {
-  background-color: black;
-}
+@import url('https://fonts.googleapis.com/css?family=Mina|Rammetto+One');
 
-.loginPrompt {
-  margin: 10px;
-  width: 200px;
-  height: 100px;
-  text-align:center;
-}
-
-button {
-  width:auto;
-  height:auto;
-  background-color: red;
-  font-weight: bold;
-  border-radius: 25px;
-}
-
-button:hover {
-  color: white;
-}
-
-button:active {
+body {
   background-color: blue;
-}
-
-input {
-  margin:10px;
-}
-
-form {
-  border: 1px red solid;
-  padding: 10px;
-}
-
-::placeholder {
-  text-align: center;
-}
-
-#error {
-  height: auto;
-  width: auto;
-  visibility: hidden;
   color: white;
-  display:none;
-  margin: 5px;
-  font-style: italic;
-  font-family: 'helvetica', sans-serif;
-  font-size: 10px;
-  text-align: center;
-  padding-top: 5px;
+  font-family: 'Mina', sans-serif;
+  margin: 20px;
+}
+
+dd {
+  line-height: 25px;
+}
+
+#biography dt {
+  margin: 10px;
+  font-family: 'Rammetto One', cursive;
+}
+
+#biography dd {
+  margin: 10px;
+  text-indent: 25px;
+  display: none;
 }

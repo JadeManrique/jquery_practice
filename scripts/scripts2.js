@@ -1,29 +1,21 @@
 $(document).ready(function () {
 
-    $("#submit").click( function () {
 
-    var emailLog = $("#email").val();
-    var passwordLog = $("#password").val();
 
-    console.log( validateEmail(emailLog), passwordLog);
+  $("#biography dt").click(function (e) {
 
-    if (emailLog == "jade.a.manrique@gmail.com") {
-      if (passwordLog == "12345678") {
-        console.log("Correct");
-      } else {
-        $("#error").css({"visibility": "visible", "display": "block"})
-      }
+    var isItHidden = false;
 
-    } else {
-        $("#error").css({"visibility": "visible", "display": "block"})
-      }
+    if ( $("#biography dd").css("display") == "none" ) {
 
-    });
+    $("#biography dd").css("display", "block"); } else {
+
+      $("#biography dd").css("display", "none");
+
+    }
 
   });
 
 
-function validateEmail(email) {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-  }
+
+});

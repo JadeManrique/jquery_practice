@@ -88,3 +88,62 @@ function randomNumber() {
 for (var i = 0; i < 12; i++) {
   console.log("hello");
 }
+
+//password loginPrompt
+
+$(document).ready(function () {
+
+    $("#submit").click( function () {
+
+    var emailLog = $("#email").val();
+    var passwordLog = $("#password").val();
+
+    console.log( validateEmail(emailLog), passwordLog);
+
+    if (emailLog == "jade.a.manrique@gmail.com") {
+      if (passwordLog == "12345678") {
+        console.log("Correct");
+      } else {
+        $("#error").css({"visibility": "visible", "display": "block"})
+      }
+
+    } else {
+        $("#error").css({"visibility": "visible", "display": "block"})
+      }
+
+    });
+
+  });
+
+
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+
+//html part
+/*
+
+<div class="loginPrompt">
+
+  <form action="#" method="post">
+
+    <input type="text" id="email" placeholder="example@email.com" />
+
+    <input type="password" id="password" placeholder="Password" />
+
+    <button type="button" id="submit"> ENTER </button>
+
+    <div id="error">
+
+      <p> No account found </p>
+
+    </div>
+
+  </form>
+
+</div>
+
+*/
+
+// end password loginPrompt
