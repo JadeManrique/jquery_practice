@@ -1,16 +1,23 @@
-$(document).ready(function () {
+$(document).ready( function () {
 
 
 
-  $("#biography dt").click(function (e) {
+  $("#submit").click( function () {
 
-    $("#biography dd").css("display", "none");
+    var emailText = $("#email").val();
 
-    if ( $(this).next().css("display") == "none" ) {
+    var isEmail = validateEmail(emailText);
 
-    $(this).next().css("display", "inline-block"); } else {
+    if (isEmail == true) {
 
-      $(this).next().css("display", "none");
+      var message = "This is a valid Email.";
+
+      $("#error").html(message);
+
+    } else {
+      var errorMessage = "This is not a valid Email.";
+
+      $("#error").html(errorMessage);
 
     }
 
@@ -19,3 +26,27 @@ $(document).ready(function () {
 
 
 });
+
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+
+/* var emailText = $("#email").val();
+
+var isEmail = validateEmail(emailText);
+
+if (isEmail == true) {
+
+  var message = "This is a valid Email.";
+
+  $("#error").html(message);
+
+} else {
+  var errorMessage = "This is not a valid Email.";
+
+  $("#error").html(errorMessage);
+
+}
+
+*/

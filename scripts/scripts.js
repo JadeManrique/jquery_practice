@@ -89,6 +89,28 @@ for (var i = 0; i < 12; i++) {
   console.log("hello");
 }
 
+
+// accordion
+
+$("#biography dt").click( function (e) {
+
+  $("#biography dd").css("display", "none");
+
+  if ( $(this).next().css("display") == "none" ) {
+
+    $(this).next().css("display", "block");
+
+  } else {
+
+    $(this).next().css("display", "none");
+
+  }
+
+});
+
+/* html use <dt> <dd> */
+
+
 //password loginPrompt
 
 $(document).ready(function () {

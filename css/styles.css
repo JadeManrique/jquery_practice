@@ -6,19 +6,13 @@ body {
   font-family: 'Mina', sans-serif;
   margin: 20px;
 }
+ .loginPrompt {
+   width: 200px;
+   height: 200px;
+   overflow: hidden;
+   border: 1px red solid;
+ }
 
-dd {
-  line-height: 25px;
-}
-
-#biography dt {
-  margin: 10px;
-  text-align: center;
-  font-size: 25px;
-  font-family: 'Rammetto One', cursive;
-}
-
-#biography dd {
-  margin: 10px auto;
-  display: none;
-}
+ #error {
+   display: none;
+ }
