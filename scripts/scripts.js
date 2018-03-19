@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-
+// random test material
   var box = $("#box");
   var testBox = $("#testBox");
   var colorString = "rgb(";
@@ -14,10 +14,6 @@ $(document).ready(function() {
     $("h1").css("color", colorString);
 
   });
-
-
-
-// random test material
 
   var loopingColor = setInterval(function () {
 
@@ -169,3 +165,13 @@ function validateEmail(email) {
 */
 
 // end password loginPrompt
+
+// keypress redirect
+var textfield = $("#question");
+
+$( "#question" ).keypress(function(e) {
+if ((e.keyCode || e.which) == 13) {
+  window.location.assign("http://www.google.com/search?q=" + textfield.val());
+}
+
+});
