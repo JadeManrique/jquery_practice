@@ -1,5 +1,47 @@
 $(document).ready( function () {
 
+  var box = $("#box");
+  var testBox = $("#testBox");
+  var colorString = "rgb(";
+
+  function randomNumber() {
+
+    var number = Math.random() * 255;
+    number = Math.floor(number);
+
+    return number;
+
+  }
+
+  $("#text").click( function () {
+
+    colorString = "rgb(";
+
+    colorString = colorString + randomNumber() + ", " + randomNumber() + ", " + randomNumber() + ")";
+
+    $("h1").css("color", colorString);
+
+  });
+
+  var loopingColor = setInterval(function () {
+
+    colorString = "rgb(";
+
+    colorString = colorString + randomNumber() + ", " + randomNumber() + ", " + randomNumber() + ")";
+
+      $("#body").css("background-color", colorString);
+
+  }, 25);
+
+  var loopingColor = setInterval(function () {
+
+    colorString = "rgb(";
+
+    colorString = colorString + randomNumber() + ", " + randomNumber() + ", " + randomNumber() + ")";
+
+      $("h1").css("color", colorString);
+
+  }, 25);
 
 
   $("#submit").click( function () {
